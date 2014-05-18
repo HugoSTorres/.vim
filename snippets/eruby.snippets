@@ -1,0 +1,56 @@
+# Ruby template tags
+snippet er
+	<% ${1:code} %>
+
+# Ruby print template tags
+snippet pe
+	<%= ${1:code} %>
+
+# Ruby if end tags
+snippet if
+	<% if %>
+		${1}
+	<% end %>
+
+# Ruby if then else
+snippet ife
+	<% if %>
+		${1}
+	<% else %>	
+
+	<% end %>
+
+# Ruby else if
+snippet elif
+	<% if %>
+		${1}
+	<% elif %>
+
+	<% else %>
+
+	<% end %>
+
+# Ruby form_for
+snippet form
+	<%= form_for ${1:object} do |${2:variable}| %>
+		${3}
+	<% end %>
+
+# Ruby comment
+snippet #
+	<%# ${1:comment} %>
+
+# Ruby content tag
+snippet ct
+	<%= content_tag ${1:type}, ${2:content} %>
+
+# Ruby for each
+snippet e
+	<% ${1:object}.each do %>
+		${2}
+	<% end %>
+
+snippet eb
+	<% ${1:object}.each do |${2:variable }| %>
+		${3}
+	<% end %>
