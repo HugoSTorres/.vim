@@ -29,10 +29,6 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
-" This shows when I pass 80 columns
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
-
 " fix backspacing problem in Mac OS X
 " set backspace=indent,eol,start
 
