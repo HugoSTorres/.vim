@@ -71,4 +71,5 @@ nnoremap <leader>o :new<CR>
 " exuberant-ctags AND taglist.vim
 " NERD_tree.vim
 " ragtag.vim
+" ctrlp.vim
 
