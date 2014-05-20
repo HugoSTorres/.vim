@@ -72,4 +72,5 @@ nnoremap <leader>o :new<CR>
 " NERD_tree.vim
 " ragtag.vim
 " ctrlp.vim
+" ack.vim
 

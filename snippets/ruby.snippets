@@ -418,3 +418,23 @@ snippet tas
 	task :${2:task_name => [:dependent, :tasks]} do
 		${3}
 	end
+# describe
+snippet describe
+	describe "${1:function} do
+		${2:what it does}
+	end
+# context
+snippet context
+	context "${1:condition} do
+		${2:what it does}
+	end
+snippet bef
+	before do
+		${1:what do we do}
+	end
+# before all
+snippet befa
+	before(:all) do
+		${1:what do we do}
+	end
+
