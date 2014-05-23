@@ -55,6 +55,14 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-b> <C-w>>
 nnoremap <S-s> <C-w><
 
+"Open up a new tab
+inoremap <leader>n <Esc>:tabnew<CR>
+nnoremap <leader>n :tabnew<CR>
+
+" Change tabs
+nnoremap <leader><Tab> gt
+inoremap <leader><Tab> <ESC>gt
+
 " Open up an empty vertical split
 inoremap <leader>e <Esc>:vnew<CR>
 nnoremap <leader>e :vnew<CR>
@@ -62,6 +70,12 @@ nnoremap <leader>e :vnew<CR>
 " Open up an empty horizontal split
 inoremap <leader>o <Esc>:new<CR>
 nnoremap <leader>o :new<CR>
+
+" Taglist add files
+inoremap <leader>ta <Esc>:TlistAddFiles 
+inoremap <leader>tar <Esc>:TlistAddFilesRecursive 
+nnoremap <leader>tar :TlistAddFilesRecursive 
+nnoremap <leader>ta :TlistAddFiles 
 
 " List of plugins I have installed:
 " surround.vim
