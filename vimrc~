@@ -47,13 +47,17 @@ command Q q
 command WQ wq
 
 " Making window mappings less annoying
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+noremap <C-h> <C-w>h
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
+noremap <C-l> <C-w>l
 
-nnoremap <C-S-l> <C-w>>
-nnoremap <C-S-h> <C-w><
+" Window sizes
+noremap <S-l> <C-w>>
+noremap <S-h> <C-w><
+noremap <S-j> <C-w>-
+noremap <S-k> <C-w>+
+noremap <S-s> <C-w>=
 
 "Open up a new tab
 inoremap <leader>n <Esc>:tabnew<CR>
