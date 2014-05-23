@@ -30,7 +30,7 @@ if has("autocmd")
 endif
 
 " fix backspacing problem in Mac OS X
-" set backspace=indent,eol,start
+set backspace=indent,eol,start
 
 " =================KEYBINDINGS================================
 " keybindings with unicode characters are Mac specific for alt key
@@ -52,8 +52,8 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nnoremap <C-b> <C-w>>
-nnoremap <S-s> <C-w><
+nnoremap <C-S-l> <C-w>>
+nnoremap <C-S-h> <C-w><
 
 "Open up a new tab
 inoremap <leader>n <Esc>:tabnew<CR>
