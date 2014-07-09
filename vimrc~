@@ -4,7 +4,7 @@ set nocompatible        " no old school vi compatibility
 
 
 if has("gui_running")
-	colorscheme industry
+	colorscheme murphy
 end
 
 if has("autocmd")
@@ -31,4 +31,5 @@ source $HOME/.vim/custom/keybindings.vim
 " ragtag.vim
 " ctrlp.vim
 " ack.vim
+" nerdcommenter.vim
 
