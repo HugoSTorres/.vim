@@ -2,10 +2,7 @@ source $HOME/.vim/custom/environment.vim
 
 set nocompatible        " no old school vi compatibility
 
-
-if has("gui_running")
-	colorscheme murphy
-end
+colorscheme industry
 
 if has("autocmd")
 	filetype plugin indent on
@@ -31,5 +28,4 @@ source $HOME/.vim/custom/keybindings.vim
 " ragtag.vim
 " ctrlp.vim
 " ack.vim
-" nerdcommenter.vim
 
