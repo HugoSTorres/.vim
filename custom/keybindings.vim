@@ -38,6 +38,8 @@ nnoremap <leader>n :tabnew<CR>
 " Change tabs
 nnoremap <leader><Tab> gt
 inoremap <leader><Tab> <ESC>gt
+nnoremap <leader>`     :tabprevious<CR>
+inoremap <leader>`     <ESC>:tabprevious<CR>
 
 " Open up an empty vertical split
 inoremap <leader>e <Esc>:vnew<CR>i
