@@ -1,4 +1,4 @@
-source $HOME/.vim/custom/environment.vim
+source $HOME/.vim/custom/environment.vim " OS specific stuff in there
 
 set nocompatible        " no old school vi compatibility
 
@@ -12,6 +12,8 @@ syntax on               " Set syntax highlighting
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set ignorecase		" Do case insensitive matching
+
+source $HOME/.vim/custom/status.vim " status line info
 
 set tags+=tags;/        " Point vim to CTags files in project root
 
