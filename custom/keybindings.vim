@@ -31,15 +31,11 @@ noremap <S-j> <C-w>-
 noremap <S-k> <C-w>+
 noremap <S-s> <C-w>=
 
-"Open up a new tab
-inoremap <leader>n <Esc>:tabnew<CR>i
-nnoremap <leader>n :tabnew<CR>
-
 " Change tabs
-nnoremap <leader><Tab> gt
-inoremap <leader><Tab> <ESC>gt
-nnoremap <leader>`     :tabprevious<CR>
-inoremap <leader>`     <ESC>:tabprevious<CR>
+nnoremap <leader><Tab> :bnext<CR>
+inoremap <leader><Tab> <ESC>:bnext<CR>
+nnoremap <leader>`     :bprev<CR>
+inoremap <leader>`     <ESC>:bprev<CR>
 
 " Open up an empty vertical split
 inoremap <leader>e <Esc>:vnew<CR>i
