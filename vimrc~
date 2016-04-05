@@ -2,11 +2,27 @@ source $HOME/.vim/custom/environment.vim " OS specific stuff in there
 
 set nocompatible        " no old school vi compatibility
 
-colorscheme industry
+" VUNDLE
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'fatih/vim-go'
+
+call vundle#end()
+" ENDVUNDLE
+
 
 if has("autocmd")
 	filetype plugin indent on
 endif
+
+
+colorscheme industry
+
 
 syntax on               " Set syntax highlighting
 set showcmd		" Show (partial) command in status line.
