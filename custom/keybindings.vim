@@ -5,10 +5,6 @@ let mapleader = ","
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <Esc>:NERDTreeToggle<CR>
 
-" TagList
-nnoremap <F3> :TlistToggle<CR>
-inoremap <F3> <Esc>:TlistToggle<CR>
-
 " Toggle line numbers
 nnoremap <F4> :set invnumber<CR>
 inoremap <F4> <Esc>:set invnumber<CR>i
@@ -45,9 +41,5 @@ nnoremap <leader>e :vnew<CR>
 inoremap <leader>o <Esc>:new<CR>i
 nnoremap <leader>o :new<CR>
 
-" Taglist add files
-inoremap <leader>ta <Esc>:TlistAddFiles 
-inoremap <leader>tar <Esc>:TlistAddFilesRecursive 
-nnoremap <leader>tar :TlistAddFilesRecursive 
-nnoremap <leader>ta :TlistAddFiles 
-
+" Open up Tagbar
+nnoremap <F8> :TagbarToggle<CR>

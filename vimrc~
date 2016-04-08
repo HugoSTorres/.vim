@@ -11,6 +11,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'fatih/vim-go'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()
 " ENDVUNDLE
@@ -31,7 +32,38 @@ set ignorecase		" Do case insensitive matching
 
 source $HOME/.vim/custom/status.vim " status line info
 
-set tags+=tags;/        " Point vim to CTags files in project root
+set tags+=.tags;/        " Point vim to CTags files in project root
+
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
+\ }
+
+let g:go_fmt_command = "goimports"
 
 source $HOME/.vim/custom/keybindings.vim
 
@@ -40,7 +72,6 @@ source $HOME/.vim/custom/keybindings.vim
 " matchit.vim
 " ruby_matchit.vim
 " snipMate.vim
-" exuberant-ctags AND taglist.vim
 " NERD_tree.vim
 " ragtag.vim
 " ctrlp.vim
