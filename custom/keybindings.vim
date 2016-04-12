@@ -1,6 +1,3 @@
-" Remap leader to comma
-let mapleader = ","
-
 " NERDTree
 nnoremap <F2> :NERDTreeToggle<CR>
 inoremap <F2> <Esc>:NERDTreeToggle<CR>
